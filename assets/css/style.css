@@ -1,0 +1,123 @@
+body {
+    background: #60D394;
+}
+h1 {
+    font-size: 15vw;
+}
+
+h2 {
+    font-size: 12vw;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 4vw;
+    font-weight: 500;
+    opacity: 1!important;
+}
+
+h4 {
+    font-size: 18px;
+    font-style: italic; 
+}
+
+h5 {
+    font-size: 3vw;
+    font-style: italic;
+
+}
+
+.link {
+    cursor: pointer;
+}
+
+.sideways {
+    writing-mode: vertical-lr
+}
+
+.hidden {
+    display: none;
+}
+
+#filler-space {
+    min-height: 30vh;
+}
+
+.carousel-caption {
+    background: #E0DFD5;
+    color: #7EBCE6;
+    opacity: .9;
+}
+
+.hover{
+    animation: hover .5s ease;
+    animation-fill-mode: forwards
+}
+
+@keyframes hover {
+    from {font-size: inherit}
+    to {font-size:8vw}
+}
+
+.hover-leave{
+    animation: hover-leave .5s ease;
+    animation-fill-mode: forwards
+}
+
+@keyframes hover-leave {
+    from {font-size: inherit}
+    to {font-size:18px}
+}
+
+.title-animate-open {
+    animation: slide-open .8s ease;
+    overflow: hidden;
+}
+
+@keyframes slide-open {
+    from {height: 0}
+    to {height: 100%}
+}
+
+.title-animate-close {
+    animation: slide-close .7s ease;
+    overflow: hidden; 
+}
+
+@keyframes slide-close {
+    from {height: 100%}
+    to {height: 0}
+}
+
+.content-animate-open {
+    animation: fadein 2s ease;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to{opacity: 1}
+}
+
+.content-animate-close {
+    animation: fadeout .7s ease;
+}
+
+@keyframes fadeout {
+    from {opacity:1}
+    to {opacity:0}
+}
+
+.banner {
+    animation: bannerPlace .5s ease-in-out;
+}
+
+@keyframes bannerPlace {
+    from {min-height: 30vh}
+    to {min-height: 0vh}
+}
+
+@media only screen and (max-width: 575px){
+    .work-content-description{
+        text-align: center
+    }
+}
