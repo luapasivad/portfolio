@@ -56,7 +56,7 @@ h5 {
 
 @keyframes hover {
     from {font-size: inherit}
-    to {font-size:8vw}
+    to {font-weight: bold}
 }
 
 .hover-leave{
