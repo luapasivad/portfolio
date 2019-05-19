@@ -30,6 +30,12 @@ p {
     font-size: 20px;
 }
 
+.me {
+    border-radius: 10%;
+    max-height: 200px;
+
+}
+
 .link {
     cursor: pointer;
 }
