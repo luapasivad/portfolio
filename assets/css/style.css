@@ -6,8 +6,12 @@ h1 {
 }
 
 h2 {
-    font-size: 12vw;
+    font-size: 10vw;
     font-style: italic;
+}
+
+.title {
+    font-style: normal;
 }
 
 h3 {
@@ -56,6 +60,15 @@ p {
     background: #E0DFD5;
     color: #7EBCE6;
     opacity: .9;
+}
+
+.contactLinksDiv {
+    font-size: 3vw;
+    text-align: right;
+}
+
+.contactLink {
+    width: 100%;
 }
 
 .hover{
@@ -125,8 +138,21 @@ p {
     to {min-height: 0vh}
 }
 
-@media only screen and (max-width: 575px){
-    .work-content-description{
+@media only screen and (max-width: 767px){
+    .work-content-description {
         text-align: center
+    }
+
+    .contactLinksDiv {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .contactLink {
+        display: inline-block;
+    }
+
+    #headshot {
+        display: none;
     }
 }
